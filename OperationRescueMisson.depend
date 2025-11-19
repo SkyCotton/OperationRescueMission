@@ -1,0 +1,319 @@
+# depslib dependency file v1.0
+1763486767 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+	<gl/gl.h>
+	<_scene.h>
+	<_landingPage.h>
+	<_menu.h>
+	"_sceneSwitcher.h"
+	<_helpPage.h>
+	<_scene2.h>
+	<_scene3.h>
+	<_lockerScene.h>
+
+1763486827 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_scene.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+	<_sceneSwitcher.h>
+	<_pauseOverlay.h>
+	<_textureloader.h>
+	<_inputs.h>
+	<_obstacles.h>
+	<_collisioncheck.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_common.h
+	<iostream>
+	<windows.h>
+	<string>
+	<gl/gl.h>
+	<GL/glut.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	<fstream>
+
+1763156031 c:\users\jetza\onedrive\desktop\3d games2025\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_light.h
+	<_common.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_model.h
+	<_common.h>
+
+1763275356 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_inputs.h
+	<_common.h>
+	<_model.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_camera.h>
+	<_3dmodelloader.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_parallax.h
+	<_common.h>
+	<_textureLoader.h>
+	<_timer.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_textureloader.h
+	<_common.h>
+	<SOIL2.h>
+
+1763156031 c:\users\jetza\onedrive\desktop\3d games2025\common\include\soil2.h
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_timer.h
+	<_common.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_skybox.h
+	<_common.h>
+	<_textureloader.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_sprite.h
+	<_common.h>
+	<_textureloader.h>
+
+1763265974 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_camera.h
+	<_common.h>
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_3dmodelloader.h
+	<_common.h>
+	<_textureloader.h>
+	"Anorms.h"
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\anorms.h
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_bullets.h
+	<_common.h>
+	<_textureloader.h>
+	<_timer.h>
+
+1763265667 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_collisioncheck.h
+	<_common.h>
+
+1763274535 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_buttons.h
+	<_common.h>
+	<vector>
+	<_textureloader.h>
+	<_sceneSwitcher.h>
+
+1763484697 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_sceneswitcher.h
+	<_common.h>
+	<windows.h>
+
+1763273678 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_pauseoverlay.h
+	<GL/gl.h>
+	<iostream>
+	<SOIL2.h>
+	<cstring>
+	<_common.h>
+
+1763274178 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_obstacles.h
+	<_common.h>
+	<_textureLoader.h>
+	<_timer.h>
+
+1763273824 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_landingpage.h
+	<vector>
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+
+1763436127 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_menu.h
+	<vector>
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+
+1763274992 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_helppage.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+
+1763274186 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_scene2.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+	<_sceneSwitcher.h>
+	<_pauseOverlay.h>
+	<_textureloader.h>
+	<_inputs.h>
+	<_obstacles.h>
+	<_collisioncheck.h>
+	<_menu.h>
+
+1763360389 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_scene3.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<_buttons.h>
+	<_sceneSwitcher.h>
+	<_pauseOverlay.h>
+	<_textureloader.h>
+	<_inputs.h>
+	<_obstacles.h>
+	<_collisioncheck.h>
+	<_menu.h>
+
+1763357873 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_3dmodelloader.cpp
+	"_3dmodelloader.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_bullets.cpp
+	"_bullets.h"
+
+1763274559 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_buttons.cpp
+	"_buttons.h"
+
+1763261989 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_camera.cpp
+	"_camera.h"
+
+1763265667 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_collisioncheck.cpp
+	"_collisioncheck.h"
+
+1763443042 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_helppage.cpp
+	"_helpPage.h"
+
+1763358436 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_inputs.cpp
+	"_inputs.h"
+
+1763439667 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_landingpage.cpp
+	"_landingPage.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_light.cpp
+	"_light.h"
+
+1763441553 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_menu.cpp
+	"_menu.h"
+
+1763314727 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_model.cpp
+	"_model.h"
+
+1763314727 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_obstacles.cpp
+	"_obstacles.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_parallax.cpp
+	"_parallax.h"
+
+1763273688 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_pauseoverlay.cpp
+	"_pauseOverlay.h"
+
+1763361541 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_scene.cpp
+	"_scene.h"
+
+1763441553 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_scene2.cpp
+	"_scene2.h"
+
+1763361526 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_scene3.cpp
+	"_scene3.h"
+	"_menu.h"
+
+1763487053 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_sceneswitcher.cpp
+	"_sceneSwitcher.h"
+	"_landingPage.h"
+	"_menu.h"
+	"_scene.h"
+	"_helpPage.h"
+	"_scene2.h"
+	"_scene3.h"
+	"_lockerScene.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_skybox.cpp
+	"_skybox.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_sprite.cpp
+	"_sprite.h"
+
+1763154133 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_temp.cpp
+	"_temp.h"
+
+1763154133 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_temp.h
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_textureloader.cpp
+	"_textureloader.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\_timer.cpp
+	"_timer.h"
+
+1763153545 source:c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\src\t.cpp
+	"t.h"
+
+1763153544 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\t.h
+
+1763487825 c:\users\jetza\onedrive\desktop\3d games2025\operationrescuemisson\include\_lockerscene.h
+	<_common.h>
+	<_parallax.h>
+	<_buttons.h>
+	<_inputs.h>
+	<vector>
+
