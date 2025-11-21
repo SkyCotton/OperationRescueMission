@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OperationRescueMisson" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/OperationRescueMisson" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/jetza/OneDrive/Desktop/3D Games2025/common/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OperationRescueMisson" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/jetza/OneDrive/Desktop/3D Games2025/common/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/jetza/OneDrive/Desktop/3D Games2025/common/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../common/lib/libSoil.a" />
+			<Add library="freeglut" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="C:/Users/jetza/OneDrive/Desktop/3D Games2025/common/lib" />
+		</Linker>
+		<Unit filename="include/Anorms.h" />
+		<Unit filename="include/_3dmodelloader.h" />
+		<Unit filename="include/_bullets.h" />
+		<Unit filename="include/_buttons.h" />
+		<Unit filename="include/_camera.h" />
+		<Unit filename="include/_collisioncheck.h" />
+		<Unit filename="include/_common.h" />
+		<Unit filename="include/_dummy.h" />
+		<Unit filename="include/_helpPage.h" />
+		<Unit filename="include/_inputs.h" />
+		<Unit filename="include/_landingPage.h" />
+		<Unit filename="include/_light.h" />
+		<Unit filename="include/_lockerScene.h" />
+		<Unit filename="include/_menu.h" />
+		<Unit filename="include/_model.h" />
+		<Unit filename="include/_obstacles.h" />
+		<Unit filename="include/_parallax.h" />
+		<Unit filename="include/_pauseOverlay.h" />
+		<Unit filename="include/_scene.h" />
+		<Unit filename="include/_scene2.h" />
+		<Unit filename="include/_scene3.h" />
+		<Unit filename="include/_sceneSwitcher.h" />
+		<Unit filename="include/_shader.h" />
+		<Unit filename="include/_skybox.h" />
+		<Unit filename="include/_sounds.h" />
+		<Unit filename="include/_sprite.h" />
+		<Unit filename="include/_temp.h" />
+		<Unit filename="include/_textureloader.h" />
+		<Unit filename="include/_timer.h" />
+		<Unit filename="include/t.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/_3dmodelloader.cpp" />
+		<Unit filename="src/_bullets.cpp" />
+		<Unit filename="src/_buttons.cpp" />
+		<Unit filename="src/_camera.cpp" />
+		<Unit filename="src/_collisioncheck.cpp" />
+		<Unit filename="src/_helpPage.cpp" />
+		<Unit filename="src/_inputs.cpp" />
+		<Unit filename="src/_landingPage.cpp" />
+		<Unit filename="src/_light.cpp" />
+		<Unit filename="src/_lockerScene.cpp" />
+		<Unit filename="src/_menu.cpp" />
+		<Unit filename="src/_model.cpp" />
+		<Unit filename="src/_obstacles.cpp" />
+		<Unit filename="src/_parallax.cpp" />
+		<Unit filename="src/_pauseOverlay.cpp" />
+		<Unit filename="src/_scene.cpp" />
+		<Unit filename="src/_scene2.cpp" />
+		<Unit filename="src/_scene3.cpp" />
+		<Unit filename="src/_sceneSwitcher.cpp" />
+		<Unit filename="src/_skybox.cpp" />
+		<Unit filename="src/_sprite.cpp" />
+		<Unit filename="src/_temp.cpp" />
+		<Unit filename="src/_textureloader.cpp" />
+		<Unit filename="src/_timer.cpp" />
+		<Unit filename="src/t.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
