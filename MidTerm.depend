@@ -1,0 +1,293 @@
+# depslib dependency file v1.0
+1763260055 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+	<gl/gl.h>
+	<_scene.h>
+
+1763258079 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_scene.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<vector>
+	<_targets.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_common.h
+	<iostream>
+	<windows.h>
+	<string>
+	<gl/gl.h>
+	<GL/glut.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	<fstream>
+
+1761709990 c:\users\noahj\onedrive\desktop\3d-games-25\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_light.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_model.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_inputs.h
+	<_common.h>
+	<_model.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_camera.h>
+	<_3dmodelloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_parallax.h
+	<_common.h>
+	<_textureLoader.h>
+	<_timer.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_textureloader.h
+	<_common.h>
+	<SOIL2.h>
+
+1758764318 c:\users\noahj\onedrive\desktop\3d-games-25\common\include\soil2.h
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_timer.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_skybox.h
+	<_common.h>
+	<_textureloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_sprite.h
+	<_common.h>
+	<_textureloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_camera.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_3dmodelloader.h
+	<_common.h>
+	<_textureloader.h>
+	"Anorms.h"
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\anorms.h
+
+1763253316 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_bullets.h
+	<_common.h>
+	<_textureloader.h>
+	<_timer.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_collisioncheck.h
+	<_common.h>
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_3dmodelloader.cpp
+	"_3dmodelloader.h"
+
+1763253326 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_bullets.cpp
+	"_bullets.h"
+
+1763182727 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_camera.cpp
+	"_camera.h"
+
+1763250996 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_collisioncheck.cpp
+	"_collisioncheck.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_inputs.cpp
+	"_inputs.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_light.cpp
+	"_light.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_model.cpp
+	"_model.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_parallax.cpp
+	"_parallax.h"
+
+1763259606 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_scene.cpp
+	"_scene.h"
+	<GL/glu.h>
+
+1763163986 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_skybox.cpp
+	"_skybox.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_sprite.cpp
+	"_sprite.h"
+
+1763089855 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_textureloader.cpp
+	"_textureloader.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_timer.cpp
+	"_timer.h"
+
+1763249615 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\t.cpp
+	"t.h"
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\t.h
+
+1763245680 c:\users\noahj\onedrive\desktop\3d-games-25\midterm\include\_targets.h
+	<_common.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1763255090 source:c:\users\noahj\onedrive\desktop\3d-games-25\midterm\src\_targets.cpp
+	"_targets.h"
+
+1763260055 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+	<gl/gl.h>
+	<_scene.h>
+
+1763258079 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_scene.h
+	<_common.h>
+	<_light.h>
+	<_model.h>
+	<_inputs.h>
+	<_textureloader.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_timer.h>
+	<_3dmodelloader.h>
+	<_camera.h>
+	<_bullets.h>
+	<_collisioncheck.h>
+	<vector>
+	<_targets.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_common.h
+	<iostream>
+	<windows.h>
+	<string>
+	<gl/gl.h>
+	<GL/glut.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	<fstream>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_light.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_model.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_inputs.h
+	<_common.h>
+	<_model.h>
+	<_parallax.h>
+	<_skybox.h>
+	<_sprite.h>
+	<_camera.h>
+	<_3dmodelloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_parallax.h
+	<_common.h>
+	<_textureLoader.h>
+	<_timer.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_textureloader.h
+	<_common.h>
+	<SOIL2.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_timer.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_skybox.h
+	<_common.h>
+	<_textureloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_sprite.h
+	<_common.h>
+	<_textureloader.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_camera.h
+	<_common.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_3dmodelloader.h
+	<_common.h>
+	<_textureloader.h>
+	"Anorms.h"
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\anorms.h
+
+1763253316 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_bullets.h
+	<_common.h>
+	<_textureloader.h>
+	<_timer.h>
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_collisioncheck.h
+	<_common.h>
+
+1763245680 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\_targets.h
+	<_common.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_3dmodelloader.cpp
+	"_3dmodelloader.h"
+
+1763253326 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_bullets.cpp
+	"_bullets.h"
+
+1763182727 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_camera.cpp
+	"_camera.h"
+
+1763250996 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_collisioncheck.cpp
+	"_collisioncheck.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_inputs.cpp
+	"_inputs.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_light.cpp
+	"_light.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_model.cpp
+	"_model.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_parallax.cpp
+	"_parallax.h"
+
+1763259606 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_scene.cpp
+	"_scene.h"
+	<GL/glu.h>
+
+1763163986 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_skybox.cpp
+	"_skybox.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_sprite.cpp
+	"_sprite.h"
+
+1763255090 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_targets.cpp
+	"_targets.h"
+
+1763089855 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_textureloader.cpp
+	"_textureloader.h"
+
+1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\_timer.cpp
+	"_timer.h"
+
+1763249615 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\src\t.cpp
+	"t.h"
+
+1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemisson\include\t.h
+

@@ -1,0 +1,139 @@
+Type: 		Quake 3 Multiplayer Pluggin Model
+
+Name: 		Spitfire
+    
+Release Date: 	23rd April 2000
+
+Author:		Ian Waugh    
+
+E-Mail:		gundam@btinternet.com or ian.waugh@virgin.net
+
+Homepage: 	http://freespace.virgin.net/ian.waugh/index.htm  
+		I will around to updating this at some point in the near future.
+
+Files:		md3_spitfire.pk3 
+
+Instructions:	Place the pk3 file into your Quake III Arena\baseq3 
+                directory. If the model does not show up in the model selection
+		page in the player setup, use Winzip to unpack the md3 file
+		to  Quake III Arena\baseq3\models\players\spitfire.
+		Or just bring the consol down in game and type \model spitfire
+     		\model spitfire\blue or \model spitfire\red
+
+		This model can be freely distributed on the net as long as this text file is included,
+   		and the pk3 file is unmodified. If you wish to include it in a compilation, Mod or
+		commerical product, please email me first.
+ 
+
+Description:	In a universe, not quite like our own, the year is 
+		1937, the power blocks of Europe are locked in 
+		conflict. Knowing all out war would be to terrible 
+		to even contimplate, they have, instead, engaged
+		in a secret cold war for the last  30 years, 
+		Espoinage is the prime weapon.
+
+		During high speed trials of a new top secret 
+		prototype fighter flying boat, the aircraft
+		developed an instabilty. Unable to regain 
+		control of the aircraft in time, its pilot, 
+		Captin Sophie 'SPITFIRE' Butler-Henderson 
+		of the Royal Flying Corps crashed into the 
+		Solent at over 400 knots.
+
+		Since she was a dashed fine pilot and an all round 
+		jolly good egg, the chaps thought it would a 
+		damm shame if she bought it. So using the very 
+		latest electrical valve technology, super charged
+		engine design and alloy monocoque construction,
+		the boffins from the ministry of science rebuilt her 
+		faster and stronger than ever before.
+
+		Now she works as an agent of the Special
+		Service, performing top secret missions for 
+		King and Country in the clandestine war against
+		the Kiaser and his dastardly Prussian Empire.
+
+Influences:	Many, heres is a few in no particular order 
+		The Dambusters, Schneider Trophy Air Racers,
+                Porco Rosso, Jordan, Manx Norton, 
+		Soph our departmental PA, Machine Spirits,
+       		Vicy Butler-Henderson off Top Gear,
+		Supermarine, DeHaviland, Morgan
+		The 6 million dollar man, Jerry Anderson, 
+		Masumune Shirow, James Bond,
+		This and that. The model sort of evolved
+		by itself and the tounge in cheek story 
+		and character were created afterwords.
+
+		Go http://pgts.decollage.org//cupeng/coupeeng.htm
+		to find out more about the Schneider Trophy Air Racers
+
+Model Info:	Polygons    		: 1089 tris
+		Skin       		: 3x 256x256x24bit
+			  		  in Default and ctf red and blue
+
+Tools used:  	Mesh			: Inspire 3D 1.0  ('Cause I find it easier to use than Max)
+		Mesh tweaking, 		: 3D Studio Max R2.5 and Character Studio 2.0 
+		mapping and animation
+		Skins			: Corel Photopaint 8.0 ( I better learn photoshop one of these days )
+					  I used a picture of Jordan for the base for the face skin
+					  (http://www.fhm.co.uk/img/covergirls/jordan/1b.jpg )
+		MD3 Compiling		: q3data
+		Viewing			: NPhernos MD3 compiler, Quake IIIA and the viewer config.
+
+Sounds:		No custom sounds. 
+		If it sounds like Sarge in game, export one of the female player sound sets out of the 
+		pak0.pk3 into  Quake III arena\baseq3\sound\player\spitfire.
+ 
+		If you are a) Female b) Have have a posh but sporty english accent or can do a damm good 
+		impression of one, could you record some sound? I would love to get a sound pack together.
+
+Model Notes:    Ok its my first Q3 model, don't be too rough on me. It is actually my fifth plugin player model,
+		but the last one ai was for Q2 and the 3 before, MajorK, Etac and ASWAT where for Half-Life.
+		I've made loads of model recently, but never seem to complete them. 
+		So I decided to just get on with it and finish one. Plus doing one for Q3 was a new
+		experience and I always need more practice at animation
+
+		Its a bit poly heavy isn't it. There is a fair amount of detail there, but not enough to
+   		justify all of those pollies. Still its under polycount's recommened 1200 limit and
+    		Q3 seems to able to cope with pretty high poly models.
+
+  		The skins, well 3 24 bit 256x256 skins is far too much. It gobbles twice a much
+		texture memory as an average Q3 model. This wan't intended. I originally planned to use three
+		skins, but have them 8 bit palletted, so using only as much ram as 1 24bit one. 
+                But only when I first used the model in game I found out that Q3 doesn't support 
+		palletted TGA's :( just RGB and Grey scale ones. Bugger. I wasn't prepared to go back and
+		remap and redraw the lot, so I left it as is. Won't make that mistake again. There is no LOD.
+		The base default skin doesn't look very good, use the blue or the red one. I haven't used 
+		any shaders, its probably best not to on this model for perfomance reasons.
+
+		If you want to do a skin for this model and are a good skinner ( i.e. better than me ) then email me, 
+                and I'll help you out with the base skins. If you do make a skin there is a mapping issue around 
+		the armpits, it overlaps and all goes a bit odd, keep this area pretty plain to prevent a mess.
+
+		The animations are IMHO all right, but lack sparkle, especially the idles, they are 
+		pretty nondiscript and shakey. The model doesn't deform that badly, apart from the wrists,
+		making the skin faily plain where it covers the complex joints covers a multitude of sins though.
+		
+		The model doesn't hold its weapon level. This causes things like the rail gun trial to not look
+		quite right if you view it closely. 
+
+		After all is said, spitfire still works pretty (well IMHO again) well in game, 
+		and doesn't seem to hit performance noticeably. I have a PII 450, 128mb ram and Vodoo II SLI 
+		(Boy do I need to upgrade my graphics cards) and normally run Q3 in 640x480 with
+		medium texture quality to get a good frame rate with ID's models and maps. 
+		Setting the force player model on, so everyone appears to use my model and jumping into
+		a very busy deathmatch, performance seemed the same as normal even with half a dozen 
+		spitfires on the screen.
+
+Other:  	I sometimes can be found as "Seburo", late at night on Wireplay, Barry's world and 
+		other UK servers, usually playing Counterstrike at the mo, but sometimes Q3 deathmatch
+		or UT CTF. I'm an LPB and play rough, but I'll go easy on you if you use one of my models or skins ;).
+	
+Thanks:		The contributors to the polycount message boards for their input and help with the md3 export
+		The websites (polycount/Q2PMP, Cold Fusion) that have posted my models in the past.
+                Everybody who emailed me previous work. Many thanks for the words of encouragment.
+		Every one who has done a Player model before, thanks for the inspiration and now I 
+		really appreciate the work you put in to bring them to life.
+                And not forgettting ID Software for Quake3
+               
