@@ -55,6 +55,7 @@
 		<Unit filename="include/_inputs.h" />
 		<Unit filename="include/_light.h" />
 		<Unit filename="include/_model.h" />
+		<Unit filename="include/_objLoader.h" />
 		<Unit filename="include/_parallax.h" />
 		<Unit filename="include/_scene.h" />
 		<Unit filename="include/_skybox.h" />
@@ -71,6 +72,7 @@
 		<Unit filename="src/_inputs.cpp" />
 		<Unit filename="src/_light.cpp" />
 		<Unit filename="src/_model.cpp" />
+		<Unit filename="src/_objLoader.cpp" />
 		<Unit filename="src/_parallax.cpp" />
 		<Unit filename="src/_scene.cpp" />
 		<Unit filename="src/_skybox.cpp" />

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1763260055 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\main.cpp
+1763688389 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\main.cpp
 	<windows.h>
 	<stdlib.h>
 	<iostream>
@@ -7,7 +7,7 @@
 	<gl/gl.h>
 	<_scene.h>
 
-1763588996 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_scene.h
+1765410071 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_scene.h
 	<_common.h>
 	<_light.h>
 	<_model.h>
@@ -23,6 +23,7 @@
 	<_collisioncheck.h>
 	<vector>
 	<_targets.h>
+	<_objLoader.h>
 
 1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_common.h
 	<iostream>
@@ -47,7 +48,7 @@
 1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_model.h
 	<_common.h>
 
-1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_inputs.h
+1763688365 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_inputs.h
 	<_common.h>
 	<_model.h>
 	<_parallax.h>
@@ -78,7 +79,7 @@
 	<_common.h>
 	<_textureloader.h>
 
-1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_camera.h
+1763688329 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_camera.h
 	<_common.h>
 
 1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_3dmodelloader.h
@@ -88,12 +89,12 @@
 
 1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\anorms.h
 
-1763253316 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_bullets.h
+1763688315 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_bullets.h
 	<_common.h>
 	<_textureloader.h>
 	<_timer.h>
 
-1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_collisioncheck.h
+1763688351 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_collisioncheck.h
 	<_common.h>
 
 1763245680 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_targets.h
@@ -101,35 +102,35 @@
 	<GL/glut.h>
 	<stdlib.h>
 
-1763590694 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_3dmodelloader.cpp
+1763688659 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_3dmodelloader.cpp
 	"_3dmodelloader.h"
 
-1763253326 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_bullets.cpp
+1763688673 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_bullets.cpp
 	"_bullets.h"
 
-1763182727 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_camera.cpp
+1763688678 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_camera.cpp
 	"_camera.h"
 
-1763250996 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_collisioncheck.cpp
+1763688698 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_collisioncheck.cpp
 	"_collisioncheck.h"
 
-1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_inputs.cpp
+1763688709 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_inputs.cpp
 	"_inputs.h"
 
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_light.cpp
 	"_light.h"
 
-1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_model.cpp
+1763688720 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_model.cpp
 	"_model.h"
 
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_parallax.cpp
 	"_parallax.h"
 
-1763595573 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_scene.cpp
+1765414963 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_scene.cpp
 	"_scene.h"
 	<GL/glu.h>
 
-1763163986 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_skybox.cpp
+1763688737 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_skybox.cpp
 	"_skybox.h"
 
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_sprite.cpp
@@ -138,14 +139,26 @@
 1763596040 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_targets.cpp
 	"_targets.h"
 
-1763089855 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_textureloader.cpp
+1763688745 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_textureloader.cpp
 	"_textureloader.h"
 
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_timer.cpp
 	"_timer.h"
 
-1763249615 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\t.cpp
+1763688756 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\t.cpp
 	"t.h"
 
 1763065582 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\t.h
+
+1765410720 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_objloader.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<sstream>
+	<_common.h>
+	<_textureloader.h>
+
+1765412319 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_objloader.cpp
+	"_objLoader.h"
 

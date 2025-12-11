@@ -16,6 +16,7 @@
 #include<_collisioncheck.h>
 #include<vector>
 #include<_targets.h>
+#include<_objLoader.h>
 
 struct Button
 {
@@ -28,7 +29,7 @@ class _Scene
 {
     public:
         _Scene();           //constructor
-        virtual ~_Scene();  //Destructor
+        virtual ~_Scene();  //destructor
 
         int clickCnt =0;
 
@@ -56,7 +57,8 @@ class _Scene
         _textureLoader texLoader;
         _skyBox *skyBox = new _skyBox();
         _camera *gameCamera = new _camera();
-        _3DModelLoader *playerModel = new _3DModelLoader();
+        // _3DModelLoader *playerModel = new _3DModelLoader(); the old placeholder ufo model
+        _objLoader *playerModel = new _objLoader();
 
         GLuint landingPageTexID;
         GLuint mainMenuPageTexID;

@@ -67,7 +67,12 @@ void _Scene::initGL()
     exitButtonTexID = texLoader.loadTexture("images/exit.jpg");
     pauseTexID = texLoader.loadTexture("images/pause.png");
     // loading the model
-    playerModel->initModel("models/UFO/tris.md2");
+    // playerModel->initModel("models/UFO/tris.md2"); // old md2 model being located
+    playerModel->loadOBJ("models/American_PlayerJet/Fighter_Jet_USA/Fighter_Jet_USA_Ver_1.obj");
+    // playerModel->loadTexture("models/American_PlayerJet/Fighter_Jet_USA/"); // no texture found for Fighter_Jet_USA
+    playerModel->pos.x = 0.0f;
+    playerModel->pos.y = 1.0f;
+    playerModel->pos.z = 0.0f;
 }
 
 void _Scene::drawScene()
@@ -122,7 +127,7 @@ void _Scene::drawScene()
             gameCamera->des.y = playerModel->pos.y;
             gameCamera->des.z = playerModel->pos.z;
 
-            // 2. APPLY CAMERA
+            // apply camera
             glMatrixMode(GL_MODELVIEW);
             glLoadIdentity();
             gameCamera->setUpCamera();
@@ -153,20 +158,20 @@ void _Scene::drawScene()
 
                 // rotate the Jet to face its direction
                 // rotate around Y-axis (Up) based on dirAngleZ
-                glTranslatef(0.0f, 1.0f, 0.0f); // trying to adjust playerModel pos
-                glRotatef(playerModel->dirAngleZ, 0, 1, 0);
+                glRotatef(-playerModel->dirAngleZ, 0, 1, 0);
 
                 glScalef(0.1f, 0.1f, 0.1f);
                 glRotatef(-90, 1, 0, 0);
-                glRotatef(-90, 0, 0, 1);
+                glRotatef(90, 0, 0, 1);
 
                 glEnable(GL_TEXTURE_2D);
                 glColor3f(1.0f, 1.0f, 1.0f); // Ensure white color for texture
 
-                playerModel->Draw(); // Draw the jet
+                playerModel->drawOBJ(); // Draw the jet
 
                 glDisable(GL_TEXTURE_2D);
             glPopMatrix();
+            // end of playerModel drawing
             if (currentPageState == GAME_ACTIVE)
             {
                 // spawn targets
@@ -413,43 +418,22 @@ int _Scene::winMsg(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
                 if (wParam == 'W')
                 {
-                    // adjust signs if playerModel movement is inverted
+                    // adjust signs if playerModel movement is inverted // inverted signs!
                     playerModel->pos.x += sin(rad) * speed; // 0.5f is speed
                     playerModel->pos.z -= cos(rad) * speed;
-                } else if (wParam == 'S')
+                }
+                else if (wParam == 'S')
                 {
                     playerModel->pos.x -= sin(rad) * speed;
                     playerModel->pos.z += cos(rad) * speed;
-                } else if (wParam == 'D')
-                {
-                    playerModel->dirAngleZ -= 2.0f;
-                } else if (wParam == 'A')
+                }
+                else if (wParam == 'D')
                 {
                     playerModel->dirAngleZ += 2.0f;
-                } else if (wParam == VK_LEFT)
+                }
+                else if (wParam == 'A')
                 {
-                    gameCamera->rotAngle.x -= 2.0f;
-                    gameCamera->rotateXY();
-                } else if (wParam == VK_RIGHT)
-                {
-                    gameCamera->rotAngle.x += 2.0f;
-                    gameCamera->rotateXY();
-                } else if (wParam == VK_UP)
-                {
-                    gameCamera->rotAngle.y += 2.0f;
-                    if (gameCamera->rotAngle.y > 89.0f)
-                    {
-                        gameCamera->rotAngle.y = 89.0f; // clamping the rotation angle so it does not flip
-                    }
-                    gameCamera->rotateXY();
-                } else if (wParam == VK_DOWN)
-                {
-                    gameCamera->rotAngle.y -= 2.0f;
-                    if (gameCamera->rotAngle.y < -89.0f)
-                    {
-                        gameCamera->rotAngle.y = -89.0f;
-                    }
-                    gameCamera->rotateXY();
+                    playerModel->dirAngleZ -= 2.0f;
                 }
             } else if (currentPageState == MAIN_MENU)
             {
@@ -484,7 +468,7 @@ int _Scene::winMsg(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                 float deltaX = (float)(mouseX - lastMouseX);
                 float deltaY = (float)(mouseY - lastMouseY);
 
-                gameCamera->rotAngle.x += deltaX * 0.1f;
+                // gameCamera->rotAngle.x += deltaX * 0.1f; // removed ability to change rotation angle in the x with mouse during GAME_ACTIVE
                 gameCamera->rotAngle.y -= deltaY * 0.1f; // subtraction due to windows coords (or not)
 
                 if (gameCamera->rotAngle.y > 89.0f)
