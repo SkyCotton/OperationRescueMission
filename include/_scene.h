@@ -47,7 +47,8 @@ class _Scene
             MAIN_MENU,
             HELP_PAGE,
             GAME_ACTIVE,
-            GAME_PAUSED
+            GAME_PAUSED,
+            WIN_SCREEN
         };
         bool shouldQuit() {return currentPageState == GAME_ACTIVE;};
     protected:
@@ -67,6 +68,7 @@ class _Scene
         GLuint helpButtonTexID;
         GLuint exitButtonTexID;
         GLuint pauseTexID;
+        GLuint winScreenTexID;
 
         std::vector<Button> menuButtons;
 
@@ -75,6 +77,7 @@ class _Scene
         void drawTexture(GLuint texID, int x, int y, int w, int h);
         void drawButton(GLuint texID, int x, int y, int w, int h, Button::ActionId id);
         void fireBullet();
+        void startLevel(int levelNum);
 
         _collisionCheck col; // collision checker
         _bullets bulletPool[50]; // there can be up to 50 bullets at a time
@@ -83,6 +86,11 @@ class _Scene
 
         int lastMouseX;
         int lastMouseY;
+
+        int currentLevel{1};
+        int targetsHit{0};
+        int targetsNeeded{5};
+
 };
 
 #endif // _SCENE_H

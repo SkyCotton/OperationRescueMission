@@ -7,7 +7,7 @@
 	<gl/gl.h>
 	<_scene.h>
 
-1765410071 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_scene.h
+1765850801 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_scene.h
 	<_common.h>
 	<_light.h>
 	<_model.h>
@@ -126,11 +126,11 @@
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_parallax.cpp
 	"_parallax.h"
 
-1765414963 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_scene.cpp
+1765853646 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_scene.cpp
 	"_scene.h"
 	<GL/glu.h>
 
-1763688737 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_skybox.cpp
+1765847357 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_skybox.cpp
 	"_skybox.h"
 
 1763065583 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_sprite.cpp
@@ -161,4 +161,9 @@
 
 1765412319 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_objloader.cpp
 	"_objLoader.h"
+
+1765848471 source:c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\src\_sounds.cpp
+	"_sounds.h"
+
+1765848075 c:\users\noahj\onedrive\desktop\3d-games-25\operationrescuemission\include\_sounds.h
 

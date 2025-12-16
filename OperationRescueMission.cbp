@@ -59,6 +59,7 @@
 		<Unit filename="include/_parallax.h" />
 		<Unit filename="include/_scene.h" />
 		<Unit filename="include/_skybox.h" />
+		<Unit filename="include/_sounds.h" />
 		<Unit filename="include/_sprite.h" />
 		<Unit filename="include/_targets.h" />
 		<Unit filename="include/_textureloader.h" />
@@ -76,6 +77,7 @@
 		<Unit filename="src/_parallax.cpp" />
 		<Unit filename="src/_scene.cpp" />
 		<Unit filename="src/_skybox.cpp" />
+		<Unit filename="src/_sounds.cpp" />
 		<Unit filename="src/_sprite.cpp" />
 		<Unit filename="src/_targets.cpp" />
 		<Unit filename="src/_textureloader.cpp" />

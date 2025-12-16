@@ -16,9 +16,9 @@ void _Scene::reSizeScene(int width, int height)
     float aspectRatio = (float)width/(float)height;// keep track of the ratio
     glViewport(0,0,width,height); // adjust my viewport
 
-    glMatrixMode(GL_PROJECTION);  // To setup ptrojection
+    glMatrixMode(GL_PROJECTION);  // to setup ptrojection
     glLoadIdentity();             // calling identity matrix
-    gluPerspective(45, aspectRatio,0.1,10000.0); // setting perspective projection
+    gluPerspective(45, aspectRatio,0.1, 10000.0); // setting perspective projection
 
     this->width = GetSystemMetrics(SM_CXSCREEN);
     this->height= GetSystemMetrics(SM_CYSCREEN);
@@ -31,7 +31,7 @@ void _Scene::initGL()
 {
     glShadeModel(GL_SMOOTH); // to handle GPU shaders
     glClearColor(0.0f,0.0f,0.0f,0.0f); // black background color
-    glClearDepth(2.0f);         //depth test for layers
+    glClearDepth(1.0f);         //depth test for layers
     glEnable(GL_DEPTH_TEST);    //activate depth test
     glDepthFunc(GL_LEQUAL);     // depth function type
 
@@ -66,6 +66,7 @@ void _Scene::initGL()
     helpButtonTexID = texLoader.loadTexture("images/help.jpg");
     exitButtonTexID = texLoader.loadTexture("images/exit.jpg");
     pauseTexID = texLoader.loadTexture("images/pause.png");
+    winScreenTexID = texLoader.loadTexture("images/winScreen.jpg");
     // loading the model
     // playerModel->initModel("models/UFO/tris.md2"); // old md2 model being located
     playerModel->loadOBJ("models/American_PlayerJet/Fighter_Jet_USA/Fighter_Jet_USA_Ver_1.obj");
@@ -73,6 +74,10 @@ void _Scene::initGL()
     playerModel->pos.x = 0.0f;
     playerModel->pos.y = 1.0f;
     playerModel->pos.z = 0.0f;
+
+    currentLevel = 1;
+    targetsHit = 0;
+    targetsNeeded = 5;
 }
 
 void _Scene::drawScene()
@@ -111,6 +116,7 @@ void _Scene::drawScene()
 
         case GAME_ACTIVE:
         case GAME_PAUSED:
+        {
             glMatrixMode(GL_MODELVIEW);
             glLoadIdentity();
 
@@ -133,7 +139,12 @@ void _Scene::drawScene()
             gameCamera->setUpCamera();
 
             glPushMatrix();
-                glTranslatef(gameCamera->eye.x, gameCamera->eye.y, gameCamera->eye.z);
+                float matrix[16];
+                glGetFloatv(GL_MODELVIEW_MATRIX, matrix);
+                matrix[12] = 0;
+                matrix[13] = 0;
+                matrix[14] = 0;
+                glLoadMatrixf(matrix);
                 skyBox->drawSkyBox();
             glPopMatrix();
 
@@ -215,6 +226,23 @@ void _Scene::drawScene()
                         {
                             bulletPool[i].actionTrigger = _bullets::HIT; // hit consequences
                             targetPool[j].live = false;
+
+                            targetsHit++;
+                            cout << "Targets Hit: " << targetsHit << "/" << targetsNeeded << endl; // for debugging
+
+                            if (targetsHit >= targetsNeeded)
+                            {
+                                if (currentLevel < 3)
+                                {
+                                    // advance to the next level
+                                    startLevel(currentLevel + 1);
+                                }
+                                else
+                                {
+                                    // win condition
+                                    currentPageState = WIN_SCREEN;
+                                }
+                            }
                         }
                     }
                 }
@@ -244,6 +272,16 @@ void _Scene::drawScene()
 
                 end2D();
             }
+        }
+        break;
+        case WIN_SCREEN:
+            start2D();
+            // draw win screen
+            drawTexture(winScreenTexID,
+                        (this->width / 2) - 300,
+                        (this->height / 2) - 200,
+                        600, 400);
+            end2D();
         break;
     }
 }
@@ -331,6 +369,32 @@ void _Scene::fireBullet()
         }
     }
 }
+void _Scene::startLevel(int levelNum)
+{
+    currentLevel = levelNum;
+    targetsHit = 0;
+
+    switch (currentLevel)
+    {
+        case 1: targetsNeeded = 5;  break;
+        case 2: targetsNeeded = 10; break;
+        case 3: targetsNeeded = 15; break;
+        default: targetsNeeded = 5; break;
+    }
+    // reset player pos
+    playerModel->pos.x = 0.0f;
+    playerModel->pos.y = 1.0f; // keep at floor
+    playerModel->pos.z = 0.0f;
+    playerModel->dirAngleZ = 0.0f;
+    // clear all bullets
+    for(int i=0; i<50; i++) bulletPool[i].live = false;
+    // clear all targets
+    for(int i=0; i<20; i++) targetPool[i].live = false;
+    // timer reset
+    gameTimer->reset();
+    // set state
+    currentPageState = GAME_ACTIVE;
+}
 int _Scene::winMsg(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch(uMsg)
@@ -365,7 +429,8 @@ int _Scene::winMsg(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                     menuButtons.clear();
                     if (clickedAction == Button::BUTTON_NEW_GAME)
                     {
-                        currentPageState = GAME_ACTIVE;
+                        // currentPageState = GAME_ACTIVE; // deprecated keep for backup
+                        startLevel(1);
                     } else if (clickedAction == Button::BUTTON_EXIT)
                     {
                         PostQuitMessage(0); // uses windows to close entire application
@@ -410,6 +475,17 @@ int _Scene::winMsg(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                     PostQuitMessage(0);
                 }
                 break;
+                return 0;
+            } else if (currentPageState == WIN_SCREEN)
+            {
+                if (wParam == 'R' || wParam == VK_RETURN)
+                {
+                    startLevel(1); // restart from level 1
+                }
+                else if (wParam == 'E' || wParam == VK_ESCAPE) // press E or Esc to Exit
+                {
+                    PostQuitMessage(0);
+                }
                 return 0;
             } else if (currentPageState == GAME_ACTIVE) // process arrow keys if the game is active
             {
